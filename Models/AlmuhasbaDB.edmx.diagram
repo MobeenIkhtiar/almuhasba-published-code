@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="dcd98dabae7c464b8fdbbec65ac42a15" Name="Diagram1">
+        <EntityTypeShape EntityType="almuhasbaModel.area" Width="1.5" PointX="3" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="almuhasbaModel.book" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="almuhasbaModel.book_item" Width="1.5" PointX="19.25" PointY="27.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="almuhasbaModel.category" Width="1.5" PointX="0.75" PointY="17.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="almuhasbaModel.chatha" Width="1.5" PointX="10.25" PointY="28.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="almuhasbaModel.commodity_input" Width="1.5" PointX="14.75" PointY="17.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="almuhasbaModel.commodity_output" Width="1.5" PointX="17" PointY="16.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="almuhasbaModel.contractor" Width="1.5" PointX="5.25" PointY="12.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="almuhasbaModel.contractor_expense" Width="1.5" PointX="7.5" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="almuhasbaModel.deduction" Width="1.5" PointX="9.75" PointY="25.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="almuhasbaModel.discount" Width="1.5" PointX="17" PointY="25.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="almuhasbaModel.dry" Width="1.5" PointX="19.25" PointY="16.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="almuhasbaModel.fixation" Width="1.5" PointX="7.5" PointY="16.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="almuhasbaModel.germination_in_lab" Width="1.5" PointX="7.5" PointY="21.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="almuhasbaModel.germination_result" Width="1.5" PointX="9.75" PointY="20.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="almuhasbaModel.invoice" Width="1.5" PointX="9.75" PointY="15.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="almuhasbaModel.invoice_number" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="almuhasbaModel.payment" Width="1.5" PointX="0.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="almuhasbaModel.premium" Width="1.5" PointX="12" PointY="15" IsExpanded="true" />
+        <EntityTypeShape EntityType="almuhasbaModel.produce_item" Width="1.5" PointX="14.75" PointY="14.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="almuhasbaModel.product_after_pack" Width="1.5" PointX="17" PointY="21.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="almuhasbaModel.product_issue_for_pack" Width="1.5" PointX="14.75" PointY="23.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="almuhasbaModel.purchase_order" Width="1.5" PointX="5.25" PointY="16.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="almuhasbaModel.purchase_weight_calculate" Width="1.5" PointX="7.5" PointY="25.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="almuhasbaModel.rate_list" Width="1.5" PointX="17" PointY="28.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="almuhasbaModel.sale_invoice" Width="1.5" PointX="21.5" PointY="27" IsExpanded="true" />
+        <EntityTypeShape EntityType="almuhasbaModel.scheme" Width="1.5" PointX="14.75" PointY="27.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="almuhasbaModel.store" Width="1.5" PointX="21.5" PointY="16.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="almuhasbaModel.store_commodity" Width="1.5" PointX="12.5" PointY="20.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="almuhasbaModel.sub_category" Width="1.5" PointX="3" PointY="17.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="almuhasbaModel.sub_invoice" Width="1.5" PointX="12" PointY="17.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="almuhasbaModel.supplier" Width="1.5" PointX="3" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="almuhasbaModel.warehouse" Width="1.5" PointX="19.25" PointY="13.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="almuhasbaModel.weight_after_production" Width="1.5" PointX="10.25" PointY="31.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="almuhasbaModel.pack_expense" Width="1.5" PointX="0.75" PointY="5.75" IsExpanded="true" />
+        <AssociationConnector Association="almuhasbaModel.purchase_order_ibfk_1" ManuallyRouted="false" />
+        <AssociationConnector Association="almuhasbaModel.book_ibfk_1" ManuallyRouted="false" />
+        <AssociationConnector Association="almuhasbaModel.book_item_ibfk_2" ManuallyRouted="false" />
+        <AssociationConnector Association="almuhasbaModel.book_item_ibfk_3" ManuallyRouted="false" />
+        <AssociationConnector Association="almuhasbaModel.sale_invoice_ibfk_1" ManuallyRouted="false" />
+        <AssociationConnector Association="almuhasbaModel.sub_category_ibfk_1" ManuallyRouted="false" />
+        <AssociationConnector Association="almuhasbaModel.store_commodity_ibfk_5" ManuallyRouted="false" />
+        <AssociationConnector Association="almuhasbaModel.commodity_input_ibfk_1" ManuallyRouted="false" />
+        <AssociationConnector Association="almuhasbaModel.commodity_output_ibfk_2" ManuallyRouted="false" />
+        <AssociationConnector Association="almuhasbaModel.commodity_output_ibfk_1" ManuallyRouted="false" />
+        <AssociationConnector Association="almuhasbaModel.dry_ibfk_1" ManuallyRouted="false" />
+        <AssociationConnector Association="almuhasbaModel.contractor_expense_ibfk_2" ManuallyRouted="false" />
+        <AssociationConnector Association="almuhasbaModel.contractor_expense_ibfk_1" ManuallyRouted="false" />
+        <AssociationConnector Association="almuhasbaModel.deduction_ibfk_1" ManuallyRouted="false" />
+        <AssociationConnector Association="almuhasbaModel.discount_ibfk_1" ManuallyRouted="false" />
+        <AssociationConnector Association="almuhasbaModel.fixation_ibfk_1" ManuallyRouted="false" />
+        <AssociationConnector Association="almuhasbaModel.invoice_ibfk_1" ManuallyRouted="false" />
+        <AssociationConnector Association="almuhasbaModel.germination_in_lab_ibfk_1" ManuallyRouted="false" />
+        <AssociationConnector Association="almuhasbaModel.germination_result_ibfk_1" ManuallyRouted="false" />
+        <AssociationConnector Association="almuhasbaModel.premium_ibfk_1" ManuallyRouted="false" />
+        <AssociationConnector Association="almuhasbaModel.sub_invoice_ibfk_1" ManuallyRouted="false" />
+        <AssociationConnector Association="almuhasbaModel.product_after_pack_ibfk_1" ManuallyRouted="false" />
+        <AssociationConnector Association="almuhasbaModel.product_after_pack_ibfk_2" ManuallyRouted="false" />
+        <AssociationConnector Association="almuhasbaModel.product_issue_for_pack_ibfk_1" ManuallyRouted="false" />
+        <AssociationConnector Association="almuhasbaModel.purchase_order_ibfk_2" ManuallyRouted="false" />
+        <AssociationConnector Association="almuhasbaModel.purchase_order_ibfk_3" ManuallyRouted="false" />
+        <AssociationConnector Association="almuhasbaModel.purchase_weight_calculate_ibfk_1" ManuallyRouted="false" />
+        <AssociationConnector Association="almuhasbaModel.store_commodity_ibfk_4" ManuallyRouted="false" />
+        <AssociationConnector Association="almuhasbaModel.rate_list_ibfk_1" ManuallyRouted="false" />
+        <AssociationConnector Association="almuhasbaModel.scheme_ibfk_1" ManuallyRouted="false" />
+        <AssociationConnector Association="almuhasbaModel.store_ibfk_1" ManuallyRouted="false" />
+        <AssociationConnector Association="almuhasbaModel.store_ibfk_2" ManuallyRouted="false" />
+        <AssociationConnector Association="almuhasbaModel.store_commodity_ibfk_2" ManuallyRouted="false" />
+        <AssociationConnector Association="almuhasbaModel.store_commodity_output" ManuallyRouted="false" />
+        <AssociationConnector Association="almuhasbaModel.store_dry" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

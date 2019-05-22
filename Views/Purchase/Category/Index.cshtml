@@ -1,0 +1,123 @@
+﻿@model IEnumerable<Almuhasba.Models.category>
+
+
+<!-- Basic datatable -->
+<div class="panel panel-flat">
+    <div class="panel-heading">
+        <h5 class="panel-title">Categories</h5>
+        <div class="heading-elements">
+            <input type="submit" class="btn btn-primary" value="Add Category" data-toggle="modal" data-target="#category" />
+        </div>
+    </div>
+
+    <div class="panel-body">
+    </div>
+
+    <table class="table datatable-basic">
+        <thead>
+            <tr>
+
+                <th>Id</th>
+                <th>Name</th>
+                <th>Status</th>
+                <th class="text-center">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{ int i = 1; }
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.Raw(i++)
+                    </td>
+
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td><span class="label label-success">Active</span></td>
+                    <td class="text-center">
+                        <ul class="icons-list">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="icon-menu9"></i>
+                                </a>
+
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li><a class="open_UpdateCategory" data-toggle="modal" data-target="#editcategory"  onclick=updatemodal(@item.Id,'@item.Name') ><i class="icon-file-pdf"></i> Edit</a></li>
+                                    <li><a onclick="deleteCategory(this,@item.Id)" class="ab"><i class="icon-file-excel"></i> Delete</a></li>
+
+                                </ul>
+                            </li>
+                        </ul>
+                    </td>
+
+                </tr>
+            }
+
+
+
+        </tbody>
+    </table>
+
+</div>
+<!-- /basic datatable -->
+<!-- /Add category -->
+<div id="category" class="modal fade" style="display: none;">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h5 class="modal-title">Add Category</h5>
+            </div>
+
+            <div class="modal-body">
+
+                <div class="form-group">
+                    <label class="control-label col-sm-3">Category</label>
+                    <div class="col-sm-9">
+                        <input type="text" placeholder="Name" class="form-control" id="categoryName" value="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+                <button type="button" id="addcategory" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- End Add category-->
+<!-- /Edit category -->
+<div id="editcategory" class="modal fade" style="display: none;">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h5 class="modal-title">Edit Category</h5>
+            </div>
+            
+                <div class="modal-body">
+
+                    <div class="form-group">
+                        <label class="control-label col-sm-3">Category</label>
+                        <div class="col-sm-9">
+                            <input type="text" placeholder="Name" class="form-control" id="updateCategoryName" value="">
+                            <input type="hidden" id="updateCategoryId" value="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+                    <button type="button" id="editcategorybtn" class="btn btn-primary">Save changes</button>
+                </div>
+           
+        </div>
+    </div>
+</div>
+
+<!-- End Edit category-->
